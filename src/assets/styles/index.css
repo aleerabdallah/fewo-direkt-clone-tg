@@ -5,10 +5,65 @@
 }
 
 header {
-    margin: 1rem 8.3rem;
+    padding: 0.7rem 7.2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid white;
 }
 .nav {
     display: flex;
     justify-content: space-between;
-    background-color: yellow;
+    padding: 0.2rem 1rem;
+    /* background-color: yellow; */
+}
+.nav-links {
+    display: flex;
+    margin: 1px 24px;
+}
+/* changing nav links display to from block to inline */
+.nav-links > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+/* removing  list style */
+.nav-links > ul > li {
+    list-style: none;
+    display: flex;
+}
+.nav-links > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+.download-link {
+    border: 1px solid #cdcede;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.logo-wrapper {
+    width: 30%;
+    /* background-color: grey; */
+}
+.logo-wrapper > img {
+    width: 50%;
+    max-width: 100%;
+}
+
+/* MAIN Content */
+.hero {
+    padding: 13rem 0px;
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+        url("/public/hero-section-2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 12rem;
 }
