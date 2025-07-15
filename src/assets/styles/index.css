@@ -52,10 +52,8 @@ header {
 
 /* MAIN Content */
 .hero {
-    padding: 13rem 0px;
-    background:
-        linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-        url("/public/hero-section-2.jpeg");
+    padding: 12rem 0px;
+    background: url("/public/hero-section-2.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,7 +61,34 @@ header {
 
 .hero-content {
     display: flex;
+    gap: 20px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 12rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
+}
+
+.hero-title > h1 {
+    font-size: 2.2rem;
+    color: white;
+}
+.search-section {
+    background-color: white;
+    max-width: 100%;
+    width: 100%;
+    padding: 1.3rem 1.3rem;
+    border-radius: 0.6rem;
+}
+.search-section > form {
+    display: flex;
+    justify-content: space-between;
+}
+.s-input {
+    border: 1px solid #ccc;
+    padding: 12px 4px;
+    border-radius: 10px;
+    display: flex;
+}
+.s-input > div > img {
+    width: 30px;
 }
